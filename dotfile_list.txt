@@ -1,0 +1,3 @@
+/home/wintape/.bashrc .bashrc
+/home/wintape/.config/i3 i3
+/etc/polybar/ polybar
