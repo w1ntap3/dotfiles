@@ -45,8 +45,8 @@ bindsym XF86AudioNext exec --no-startup-id playerctl next
 bindsym XF86AudioPrev exec --no-startup-id playerctl previous
 
 # brightness
-bindsym XF86MonBrightnessUp exec --no-startup-id ~/.config/i3/brightness.sh up
-bindsym XF86MonBrightnessDown exec --no-startup-id ~/.config/i3/brightness.sh down
+bindsym XF86MonBrightnessUp exec ~/.config/i3/brightness.sh +10
+bindsym XF86MonBrightnessDown exec ~/.config/i3/brightness.sh -10
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -82,8 +82,13 @@ for_window [class="btopfloat"] floating enable
 for_window [class="btopfloat"] resize set 1800 900
 for_window [class="btopfloat"] move position center
 
+# pavucontrolfloat
+for_window [class="pavucontrol"] floating enable
+for_window [class="pavucontrol"] resize set 800 600
+for_window [class="pavucontrol"] move position center
+
 # keyboard
-exec_always setxkbmap -layout us,ru
+exec_always setxkbmap -layout us,ru,az
 exec_always setxkbmap -option "grp:win_space_toggle"
 
 exec --no-startup-id nm-applet
