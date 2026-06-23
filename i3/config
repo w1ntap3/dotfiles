@@ -61,13 +61,12 @@ tiling_drag modifier
 exec_always --no-startup-id ~/.config/i3/polybar.sh
 
 exec feh --bg-scale /home/wintape/Pictures/wallpapers/wallhaven-k9d6vm.png
-exec_always --no-startup-id sh ~/.config/i3/copyq.sh
+exec_always picom &
 default_border pixel 2
 default_floating_border pixel 2
 
 # my keybinds
 bindsym $mod+o exec obsidian
-bindsym $mod+v exec copyq show 
 bindsym $mod+e exec --no-startup-id alacritty --class rangerfloat -e ranger
 bindsym $mod+b exec --no-startup-id alacritty --class btopfloat -e btop
 bindsym $mod+l exec i3lock

@@ -1,3 +1,5 @@
 /home/wintape/.bashrc .bashrc
 /home/wintape/.config/i3 i3
 /etc/polybar/ polybar
+/home/wintape/.config/picom picom
+/home/wintape/.config/alacritty/ alacritty

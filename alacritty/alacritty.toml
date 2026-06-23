@@ -1,0 +1,23 @@
+[font]
+size = 8
+
+[font.normal]
+family = "0xProto Nerd Font"
+style = "Regular"
+
+[font.bold]
+family = "0xProto Nerd Font"
+style = "Bold"
+
+[font.italic]
+family = "0xProto Nerd Font"
+style = "Italic"
+
+[font.bold_italic]
+family = "0xProto Nerd Font"
+style = "Bold Italic"
+
+[general]
+import = [
+  "~/.config/alacritty/javid.toml"
+]

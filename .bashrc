@@ -7,12 +7,16 @@
 
 alias ls='ls -a'
 alias grep='grep --color=auto'
+
 alias cdi3='cd ~/.config/i3/'
 alias cdpoly='cd /etc/polybar/'
+alias cdpicom='cd ~/.config/picom/'
+alias cddot='cd ~/Documents/dotfiles'
+
 alias nvimi3='nvim ~/.config/i3/config'
 alias nvimpoly='sudo nvim /etc/polybar/config.ini'
+alias nvimpicom='nvim ~/.config/picom/picom.conf'
 alias bat='bat --style plain'
-alias cddot='cd ~/Documents/dotfiles'
 
 export PATH="$HOME/.local/bin:$PATH"
 
