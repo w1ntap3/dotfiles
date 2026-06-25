@@ -1,27 +1,27 @@
-# XTerm's default colors - Dark Green themed (Extended Palette)
-# Default colors
+# Dark forest-green v2 (slightly more alive)
+
 [colors.primary]
-background = '#000000'
-foreground = '#2d8a2d'
+background = '#101512'   # keeps that green-charcoal base
+foreground = '#c2d6bc'   # brighter, cleaner text
 
 # Normal colors
 [colors.normal]
-black   = '#0a0a0a'
-red     = '#1a3a1a'
-green   = '#1a5c1a'
-yellow  = '#2d6b2d'
-blue    = '#0d3d1a'
-magenta = '#1a4d2d'
-cyan    = '#0d5c4d'
-white   = '#3a3a3a'
+black   = '#171c19'
+red     = '#58725d'      # still muted, green-biased
+green   = '#6f9470'      # more present
+yellow  = '#8ea56f'
+blue    = '#4f7065'
+magenta = '#68866d'
+cyan    = '#5d8f81'
+white   = '#a6b4a8'
 
 # Bright colors
 [colors.bright]
-black   = '#4a4a4a'
-red     = '#2d8a2d'
-green   = '#00cc00'
-yellow  = '#339933'
-blue    = '#1a9966'
-magenta = '#00cc66'
-cyan    = '#00aa88'
-white   = '#808080'
+black   = '#59625b'
+red     = '#7da783'
+green   = '#9adf84'      # stronger accent green
+yellow  = '#b4c98b'
+blue    = '#76aa97'
+magenta = '#8eb895'
+cyan    = '#86c2ae'
+white   = '#e0e9dc'

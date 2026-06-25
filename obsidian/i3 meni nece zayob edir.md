@@ -3,14 +3,14 @@
 - rofi
 - picom
 - flameshot
-- best nvim
+- lazyvim
 - lightdm tweaks
 - rofi + copyq daemon
 - notifications (dunst)
-- btop
-- alacritty
 - zooming tool
 # done
 - volume/playback + brightness setup for polybar/i3
 - polybar
 - turn everything into a repo
+- alacritty color
+- btop

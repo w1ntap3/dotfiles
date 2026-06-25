@@ -70,7 +70,7 @@ bindsym $mod+o exec obsidian
 bindsym $mod+e exec --no-startup-id alacritty --class rangerfloat -e ranger
 bindsym $mod+b exec --no-startup-id alacritty --class btopfloat -e btop
 bindsym $mod+l exec i3lock
-
+# bindsym $mod+Shift+s exec flameshot
 # rangerfloat
 for_window [class="rangerfloat"] floating enable
 for_window [class="rangerfloat"] resize set 1000 700

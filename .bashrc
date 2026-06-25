@@ -17,7 +17,7 @@ alias nvimi3='nvim ~/.config/i3/config'
 alias nvimpoly='sudo nvim /etc/polybar/config.ini'
 alias nvimpicom='nvim ~/.config/picom/picom.conf'
 alias bat='bat --style plain'
-
+alias pacsyu='sudo pacman -Syu'
 export PATH="$HOME/.local/bin:$PATH"
 
 # Git branch in prompt

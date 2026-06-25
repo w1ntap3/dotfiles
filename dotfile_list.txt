@@ -3,3 +3,4 @@
 /etc/polybar/ polybar
 /home/wintape/.config/picom picom
 /home/wintape/.config/alacritty/ alacritty
+/home/wintape/.config/btop/ btop
