@@ -1,10 +1,9 @@
 # to-do
-- ranger
+- pcmanfm
 - rofi
-- picom
-- flameshot
+- scrot + i3 + clipboard + rofi
 - lazyvim
-- lightdm tweaks
+- lightdm, gtk and etc. tweaks
 - rofi + copyq daemon
 - notifications (dunst)
 - zooming tool
@@ -12,5 +11,6 @@
 - volume/playback + brightness setup for polybar/i3
 - polybar
 - turn everything into a repo
-- alacritty color
+- alacritty 
 - btop
+- picom
