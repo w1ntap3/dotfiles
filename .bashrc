@@ -16,13 +16,20 @@ alias cddot='cd ~/Documents/dotfiles'
 alias nvimi3='nvim ~/.config/i3/config'
 alias nvimpoly='sudo nvim /etc/polybar/config.ini'
 alias nvimpicom='nvim ~/.config/picom/picom.conf'
-alias bat='bat --style plain'
-alias pacsyu='sudo pacman -Syu'
+alias pcs='sudo pacman -Syu'
 export PATH="$HOME/.local/bin:$PATH"
-
+alias cdns='cd ~/Documents/NSFS/'
 # Git branch in prompt
 git_branch() {
-    git branch --show-current 2>/dev/null
+  git branch --show-current 2>/dev/null
 }
 
 PS1='[\#] \w$(b=$(git_branch); [ -n "$b" ] && printf " (%s)" "$b") \$ '
+
+alias fastfetch='fastfetch --logo-color-1 green --logo-color-2 bright_green'
+
+# opencode
+export PATH=/home/wintape/.opencode/bin:$PATH
+
+alias k="kubectl"
+alias k3dworthless="k3d cluster create worthless --agents 1 -p "3000:80@loadbalancer""

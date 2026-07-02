@@ -1,12 +1,14 @@
 # to-do
 - pcmanfm
 - rofi
-- scrot + i3 + clipboard + rofi
+- scrot + i3 + xclip/greenclip + rofi
 - lazyvim
 - lightdm, gtk and etc. tweaks
-- rofi + copyq daemon
 - notifications (dunst)
 - zooming tool
+- bluetooth shell script
+- starship + ble
+- stalonetray polybar
 # done
 - volume/playback + brightness setup for polybar/i3
 - polybar

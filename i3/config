@@ -60,7 +60,7 @@ tiling_drag modifier
 # polybar
 exec_always --no-startup-id ~/.config/i3/polybar.sh
 
-exec feh --bg-scale /home/wintape/Pictures/wallpapers/wallhaven-k9d6vm.png
+exec feh --bg-fill /home/wintape/Pictures/wallpapers/wallhaven-k9d6vm.png
 exec_always picom &
 default_border pixel 2
 default_floating_border pixel 2
@@ -69,8 +69,7 @@ default_floating_border pixel 2
 bindsym $mod+o exec obsidian
 bindsym $mod+e exec --no-startup-id pcmanfm --class pcmanfloat
 bindsym $mod+b exec --no-startup-id alacritty --class btopfloat -e btop
-bindsym $mod+l exec i3lock
-bindsym $mod+Shift+s exec ~/.config/i3/screenshot.sh
+bindsym $mod+l exec ~/.config/i3/lock.sh
 # pcmanfloat
 for_window [class="pcmanfloat"] floating enable
 for_window [class="pcmanfloat"] resize set 1700 900
@@ -226,4 +225,17 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 # bar {
 #        status_command i3status
-#
+
+for_window [class="(?i)blueman-manager"] floating enable
+for_window [class="(?i)blueman-manager"] resize set 500 300
+for_window [class="(?i)blueman-manager"] move position center
+
+bindsym $mod+Shift+b exec --no-startup-id blueman-manager
+
+bindsym $mod+Shift+s exec sh -c 'mkdir -p ~/Pictures/ss && file=~/Pictures/ss/$(date +%H-%M-%S_%d-%m-%Y).png && scrot -s "$file" -e "xclip -selection clipboard -t image/png -i \$f && greenclip print"'
+exec --no-startup-id dunst
+bindsym $mod+n exec dunstctl history-pop
+bindsym $mod+Shift+n exec dunstctl close-all
+bindsym $mod+Ctrl+n exec dunstctl context
+
+exec_always --no-startup-id autotiling
